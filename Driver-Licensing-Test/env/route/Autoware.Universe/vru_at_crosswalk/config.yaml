@@ -1,0 +1,61 @@
+scenario list: ['VRU Crossing the Street at the Crosswalk']  # the order of scenarios should be the same as test order
+
+AV:
+  speed: [5]  # AV speed when there are no challengers
+  sumo route name: 'AV_route'  # refer to sumo route
+  start lane id: 'EG_16_23_1_0'  # refer to sumo route
+  length: 5
+  width: 2
+
+BV:
+  num: 0
+  scenarios: []
+  start lane id: []
+  length: []
+  width: []
+  init position: []
+
+VRU:
+  num: 1
+  scenarios: [['VRU Crossing the Street at the Crosswalk']]
+  start lane id: ['EG_17_1_1_0']
+  length: [.5]
+  width: [.5]
+
+scenario info:
+  VRU Crossing the Street at the Crosswalk:
+    AV:
+      start ind: 53
+      end ind: 225
+    challenger:
+      start AV ind: 201
+      angle: 92.306012872917
+
+    lateral distance: 3
+    
+    deceleration reaction time: [1.5, 1.5, 1.5, 0]
+    min initial distance: 1
+    max initial distance: 40
+    min AV speed: 3
+    max AV speed: 15
+    min VRU speed: 0.5
+    max VRU speed: 3
+    min acceleration: 0
+    max acceleration: 8
+    deceleration bound: [-7.06, -3.779686566525062, -1.9582413394382072, -0.3319488178175414]
+
+    distance step: 0.1
+    AV speed step: 0.1
+    VRU speed step: 0.1
+    acceleration step: 0.1
+
+    distance resolution:
+      low: 2
+      mid: 1
+      high: 0.5
+    speed resolution:
+      low: 2
+      mid: 1
+      high: 0.5
+
+lane width: 3.8

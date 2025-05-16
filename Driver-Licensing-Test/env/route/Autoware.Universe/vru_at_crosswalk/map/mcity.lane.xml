@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-05-14 12:46:28 by Eclipse SUMO libsumo Version 1.20.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/libsumoConfiguration.xsd">
+
+    <input>
+        <net-file value="/home/zhijie/terasim/DLT/env/route/Autoware.Universe/vru_at_crosswalk/map/mcity.net.xml"/>
+        <route-files value="/home/zhijie/terasim/DLT/env/route/Autoware.Universe/vru_at_crosswalk/map/mcity.route2.xml"/>
+        <additional-files value="/home/zhijie/terasim/DLT/env/route/Autoware.Universe/vru_at_crosswalk/map/mcity.add.xml"/>
+    </input>
+
+    <output>
+        <fcd-output value="/home/zhijie/terasim/DLT/output/Autoware.Universe/visualization/test_round_3/vru_at_crosswalk/49/fcd_all.xml"/>
+        <fcd-output.acceleration value="true"/>
+    </output>
+
+    <time>
+        <begin value="0"/>
+        <end value="86400"/>
+        <step-length value="0.1"/>
+    </time>
+
+    <processing>
+        <collision.action value="warn"/>
+        <collision.check-junctions value="true"/>
+        <collision.mingap-factor value="0"/>
+        <scale value="1"/>
+        <time-to-teleport value="300"/>
+        <lanechange.duration value="1"/>
+    </processing>
+
+    <report>
+        <log value="/home/zhijie/terasim/DLT/output/Autoware.Universe/visualization/test_round_3/vru_at_crosswalk/49/run.log"/>
+    </report>
+
+    <random_number>
+        <random value="true"/>
+    </random_number>
+
+    <gui_only>
+        <quit-on-end value="true"/>
+        <start value="true"/>
+    </gui_only>
+
+</configuration>
+-->
+
+<meandata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/meandata_file.xsd">
+    <interval begin="0.00" end="25.10" id="dump_lane">
+        <edge id="EG_16_23_1">
+            <lane id="EG_16_23_1_0" sampledSeconds="3.40" traveltime="39.84" overlapTraveltime="27.09" density="6.88" laneDensity="6.88" occupancy="3.19" waitingTime="0.60" timeLoss="2.85" speed="0.91" speedRelative="0.18" departed="1" arrived="0" entered="0" left="1" laneChangedFrom="0" laneChangedTo="0"/>
+        </edge>
+        <edge id="EG_17_1_1">
+            <lane id="EG_17_1_1_0" sampledSeconds="8.12" traveltime="6.86" overlapTraveltime="8.35" density="9.57" laneDensity="9.57" occupancy="3.95" waitingTime="0.10" timeLoss="2.19" speed="4.64" speedRelative="0.77" departed="1" arrived="0" entered="1" left="2" laneChangedFrom="0" laneChangedTo="0" teleported="1"/>
+        </edge>
+    </interval>
+</meandata>

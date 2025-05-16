@@ -1,0 +1,66 @@
+scenario list: ['Right Turn (AV turns right)']  # the order of scenarios should be the same as test order
+
+AV:
+  speed: [3.6]  # AV speed when there are no challengers
+  sumo route name: 'AV_route'  # refer to sumo route
+  start lane id: 'EG_12_1_1_0'  # refer to sumo route
+  length: 5
+  width: 2
+
+BV:
+  num: 1
+  scenarios: [['Right Turn (AV turns right)']]
+  start lane id: ['EG_17_23_1_0']
+  length: [5]
+  width: [2]
+  init position: [20]
+
+VRU:
+  num: 0
+  scenarios: []
+  start lane id: []
+  length: []
+  width: []
+
+scenario info:
+  Right Turn (AV turns right):
+    AV:
+      start ind: 1
+      conflict ind: 109
+      end ind: 130
+    challenger:
+      start ind: 1
+      init ind: 344
+      conflict ind: 660
+      end ind: 1000
+
+    turning radius: 7
+    straight distance: 23  # 21.7  # distance from the stop line of the BV to the middle line of the AV lane
+
+    acceleration reaction time: 1.5
+    deceleration reaction time: 1.5
+    max initial distance: 30
+    min AV speed: 1
+    max AV speed: 9
+    min BV speed: 1
+    max BV speed: 10
+    min acceleration: 0
+    max acceleration: 8
+    acceleration bound: [-1, 0.3429369268756378, 1.8914739096130304, 2.7091926216808924, 2.87, 8]
+    deceleration bound: [-1, 0.22790515824840263, 2.062335428910697, 4.534019356008943, 7.06, 8]
+
+    distance step: 0.1
+    AV speed step: 0.1
+    BV speed step: 0.1
+    acceleration step: 0.1
+
+    distance resolution:
+      low: 2
+      mid: 1
+      high: 0.5
+    speed resolution:
+      low: 2
+      mid: 1
+      high: 0.5
+
+lane width: 3.8

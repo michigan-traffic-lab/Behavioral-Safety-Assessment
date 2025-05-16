@@ -1,0 +1,50 @@
+scenario list: ['Lane Departure (opposite direction)']  # the order of scenarios should be the same as test order
+
+AV:
+  speed: [8.3]  # AV speed when there are no challengers
+  sumo route name: 'AV_route'  # refer to sumo route
+  start lane id: 'EG_1_3_1_1'  # refer to sumo route
+  length: 5
+  width: 2
+
+BV:
+  num: 1
+  scenarios: [['Lane Departure (opposite direction)']]
+  start lane id: ['EG_1_1_1_1']
+  length: [5]
+  width: [2]
+  init position: [0]
+
+VRU:
+  num: 0
+  scenarios: []
+  start lane id: []
+  length: []
+  width: []
+
+scenario info:
+  Lane Departure (opposite direction):
+    AV:
+      start ind: 20
+      end ind: 450
+    challenger:
+      start ind: 27
+      end ind: 512
+    # max acceleration: 1.962
+    # min acceleration: [-7.06, -4.11, -1.74, -0.12]
+    reaction time: [1.5, 1.5, 1.5, 1.5]
+    lane change duration: [0.5, 1.3, 2.3, 8.4]
+    min initial distance: 20
+    max initial distance: 50
+    min delta speed: 9
+    max delta speed: 15
+    distance resolution:
+      low: 3
+      mid: 2.5
+      high: 2
+    speed resolution:
+      low: 3
+      mid: 2.5
+      high: 2
+
+lane width: 3.8

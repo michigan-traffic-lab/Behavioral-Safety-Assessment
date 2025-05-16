@@ -1,0 +1,48 @@
+scenario list: ['Car Following']  # the order of scenarios should be the same as test order
+
+AV:
+  speed: [8.3]  # AV speed when there are no challengers
+  sumo route name: 'AV_route'  # refer to sumo route
+  start lane id: 'EG_1_3_1_1'  # refer to sumo route
+  length: 5
+  width: 2
+
+BV:
+  num: 1
+  scenarios: [['Car Following']]
+  start lane id: ['EG_1_3_1_0']
+  length: [5]
+  width: [2]
+  init position: [50]
+
+VRU:
+  num: 0
+  scenarios: []
+  start lane id: []
+  length: []
+  width: []
+
+scenario info:
+  Car Following:
+    AV:
+      start ind: 10
+      end ind: 500
+    challenger:
+      start ind: 30
+      end ind: 512
+    acceleration bounds: [2.87, 2.634294073961308, 1.6737014272969737, 0.2708929004774574]
+    deceleration bounds: [-7.06, -4.030219092328863, -1.9052915347384445, -0.2551954971886696]
+    speed resolution:
+      low: 1
+      mid: 1
+      high: 1
+    acceleration resolution:
+      low: 0.5
+      mid: 0.4
+      high: 0.3
+    deceleration resolution:
+      low: 1
+      mid: 0.8
+      high: 0.5
+
+lane width: 3.8

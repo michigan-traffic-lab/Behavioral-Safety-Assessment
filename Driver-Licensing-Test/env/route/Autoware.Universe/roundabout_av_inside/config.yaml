@@ -1,0 +1,66 @@
+scenario list: ['BV Merging into the Roundabout']  # the order of scenarios should be the same as test order
+
+AV:
+  speed: [4.45]  # AV speed when there are no challengers
+  sumo route name: 'AV_route'  # refer to sumo route
+  start lane id: 'EG_9_1_1_0'  # refer to sumo route
+  length: 5
+  width: 2
+
+BV:
+  num: 1
+  scenarios: [['BV Merging into the Roundabout']]
+  start lane id: ['EG_19_1_1_0']
+  length: [5]
+  width: [2]
+  init position: [0]
+
+VRU:
+  num: 0
+  scenarios: []
+  start lane id: []
+  length: []
+  width: []
+
+scenario info:
+  BV Merging into the Roundabout:
+    AV:
+      start ind: 10
+      conflict ind: 206
+      end ind: 295
+    challenger:
+      start ind: 133
+      init ind: 178
+      conflict ind: 209
+      end ind: 374
+    
+    stop line to conflict point distance: 26.97
+
+    acceleration reaction time: 1.5
+    deceleration reaction time: 1.5
+    min initial distance: 10
+    max initial distance: 40
+    min AV speed: 1
+    max AV speed: 9
+    min BV speed: 1
+    max BV speed: 10
+    min acceleration: 0
+    max acceleration: 8
+    acceleration bound: [-1, 0.3981616955736156, 2.076858014687767, 2.7271168163741955, 2.87, 8]
+    deceleration bound: [-1, 0.3605367808842204, 2.4529986582986685, 5.089243127351763, 7.06, 8]
+
+    distance step: 0.1
+    AV speed step: 0.1
+    BV speed step: 0.1
+    acceleration step: 0.1
+
+    distance resolution:
+      low: 2
+      mid: 1
+      high: 0.5
+    speed resolution:
+      low: 2
+      mid: 1
+      high: 0.5
+
+lane width: 3.8

@@ -1,0 +1,45 @@
+scenario list: ['Traffic Signal']  # the order of scenarios should be the same as test order
+
+AV:
+  speed: [5]  # AV speed when there are no challengers
+  sumo route name: 'AV_route'  # refer to sumo route
+  start lane id: 'EG_9_1_23_0'  # refer to sumo route
+  length: 5
+  width: 2
+
+BV:
+  num: 0
+  scenarios: []
+  start lane id: []
+  length: []
+  width: []
+  init position: []
+
+VRU:
+  num: 0
+  scenarios: []
+  start lane id: []
+  length: []
+  width: []
+
+traffic signal:
+  num: 1
+  scenarios: [['Traffic Signal']]
+  node id: ['NODE_17']
+  index: [[4]]
+
+scenario info:
+  Traffic Signal:
+    AV:
+      start ind: 1
+      traffic light ind: 125
+      end ind: 178
+
+    max thw: 10
+    min thw: 0
+    thw resolution:
+      low: 0.25
+      mid: 0.25
+      high: 0.25
+
+lane width: 3.5

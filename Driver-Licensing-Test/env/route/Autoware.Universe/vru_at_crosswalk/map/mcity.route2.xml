@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <route edges="EG_16_23_1 EG_17_1_1 EG_19_1_1" id="AV_route"/>
+    <route edges="EG_17_1_1" color="green" id="VRU_route_1"/>
+
+    <vType id="AV" length="5.0" width="2.0" color="red" laneChangeModel="SL2015" maxSpeed="100.0" lcAccelLat="100.0"/>
+    <vType id="BV" length="5.0" width="2.0" color="green" laneChangeModel="SL2015" maxSpeed="100.0" lcAccelLat="100.0"/>
+    <vType id="VRU" vClass="pedestrian" length="0.5" width="0.5" color="yellow"/>
+    <!-- <vType id="VRU" length="0.5" width="0.5" color="yellow" laneChangeModel="SL2015" maxSpeed="100.0" lcAccelLat="100.0"/> -->
+
+    <!-- <personFlow id="VRU" type="VRU" begin="0.00" end="3600.00" personsPerHour="37">
+        <walk edges="EG_17_1_1"/>
+    </personFlow> -->
+
+</routes>

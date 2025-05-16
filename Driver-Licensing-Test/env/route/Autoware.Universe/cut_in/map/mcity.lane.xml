@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-05-13 22:15:38 by Eclipse SUMO libsumo Version 1.20.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/libsumoConfiguration.xsd">
+
+    <input>
+        <net-file value="/home/zhijie/terasim/DLT/env/route/Autoware.Universe/cut_in/map/mcity.net.xml"/>
+        <route-files value="/home/zhijie/terasim/DLT/env/route/Autoware.Universe/cut_in/map/mcity.route2.xml"/>
+        <additional-files value="/home/zhijie/terasim/DLT/env/route/Autoware.Universe/cut_in/map/mcity.add.xml"/>
+    </input>
+
+    <output>
+        <fcd-output value="/home/zhijie/terasim/DLT/output/Autoware.Universe/visualization/test_round_3/cut_in/45/fcd_all.xml"/>
+        <fcd-output.acceleration value="true"/>
+    </output>
+
+    <time>
+        <begin value="0"/>
+        <end value="86400"/>
+        <step-length value="0.1"/>
+    </time>
+
+    <processing>
+        <collision.action value="warn"/>
+        <collision.check-junctions value="true"/>
+        <collision.mingap-factor value="0"/>
+        <scale value="1"/>
+        <time-to-teleport value="300"/>
+        <lanechange.duration value="1"/>
+    </processing>
+
+    <report>
+        <log value="/home/zhijie/terasim/DLT/output/Autoware.Universe/visualization/test_round_3/cut_in/45/run.log"/>
+    </report>
+
+    <random_number>
+        <random value="true"/>
+    </random_number>
+
+    <gui_only>
+        <quit-on-end value="true"/>
+        <start value="true"/>
+    </gui_only>
+
+</configuration>
+-->
+
+<meandata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/meandata_file.xsd">
+    <interval begin="0.00" end="16.00" id="dump_lane">
+        <edge id="EG_1_3_1">
+            <lane id="EG_1_3_1_0" sampledSeconds="12.98" traveltime="12.38" overlapTraveltime="12.99" density="13.12" laneDensity="13.12" occupancy="6.15" waitingTime="1.90" timeLoss="4.29" speed="5.15" speedRelative="0.64" departed="1" arrived="0" entered="0" left="1" laneChangedFrom="0" laneChangedTo="0"/>
+            <lane id="EG_1_3_1_1" sampledSeconds="13.75" traveltime="13.86" overlapTraveltime="14.45" density="13.90" laneDensity="13.90" occupancy="6.17" waitingTime="0.20" timeLoss="5.78" speed="4.62" speedRelative="0.46" departed="1" arrived="0" entered="0" left="1" laneChangedFrom="0" laneChangedTo="0"/>
+        </edge>
+        <edge id="EG_1_3_1.61">
+            <lane id="EG_1_3_1.61_1" sampledSeconds="2.27" traveltime="8.68" overlapTraveltime="9.31" density="2.04" laneDensity="2.04" occupancy="0.89" waitingTime="0.00" timeLoss="0.00" speed="8.01" speedRelative="1.00" departed="0" arrived="0" entered="1" left="1" laneChangedFrom="0" laneChangedTo="0" teleported="1"/>
+            <lane id="EG_1_3_1.61_2" sampledSeconds="2.70" traveltime="8.54" overlapTraveltime="9.16" density="2.43" laneDensity="2.43" occupancy="1.09" waitingTime="0.00" timeLoss="0.10" speed="8.14" speedRelative="0.81" departed="0" arrived="0" entered="2" left="0" laneChangedFrom="0" laneChangedTo="0"/>
+        </edge>
+    </interval>
+</meandata>

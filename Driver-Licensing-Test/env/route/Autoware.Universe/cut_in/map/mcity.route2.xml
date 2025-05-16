@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <route edges="EG_1_3_1 EG_34_1_24" id="AV_route"/>
+    <route edges="EG_1_3_1 EG_34_1_24" id="BV_route_1"/>
+
+    <vType id="AV" length="5.0" width="2.0" color="red" laneChangeModel="SL2015" maxSpeed="100.0" lcAccelLat="100.0"/>
+    <vType id="BV" length="5.0" width="2.0" color="green" laneChangeModel="SL2015" maxSpeed="100.0" lcAccelLat="100.0"/>
+    <vType id="VRU" length="0.5" width="0.5" color="yellow" laneChangeModel="SL2015" maxSpeed="100.0" lcAccelLat="100.0"/>
+
+</routes>

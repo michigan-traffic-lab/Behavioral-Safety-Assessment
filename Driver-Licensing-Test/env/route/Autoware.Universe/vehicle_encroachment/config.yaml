@@ -1,0 +1,43 @@
+scenario list: ['Vehicle Encroachment']  # the order of scenarios should be the same as test order
+
+AV:
+  speed: [5]  # AV speed when there are no challengers
+  sumo route name: 'AV_route'  # refer to sumo route
+  start lane id: 'EG_1_3_1_1'  # refer to sumo route
+  length: 5
+  width: 2
+
+BV:
+  num: 1
+  scenarios: [['Vehicle Encroachment']]
+  start lane id: ['EG_1_3_1.61_2']
+  length: [5]
+  width: [2]
+  init position: [50]
+
+VRU:
+  num: 0
+  scenarios: []
+  start lane id: []
+  length: []
+  width: []
+
+scenario info:
+  Vehicle Encroachment:
+    AV:
+      start ind: 20
+      end ind: 288
+    challenger:
+      start ind: 10
+      end ind: 288
+
+    acceleration reaction time: 1.5
+    deceleration reaction time: 1.5
+    min lateral distance: -3.8
+    max lateral distance: 3.8
+    min angle: 0
+    max angle: 360
+    distance resolution: 1
+    angle resolution: 30
+
+lane width: 3.8

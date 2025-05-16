@@ -1,0 +1,4 @@
+<additional>
+    <!-- Record lane data -->
+    <laneData id="dump_lane" file="mcity.lane.xml" period="300" excludeEmpty="true"/>
+</additional>

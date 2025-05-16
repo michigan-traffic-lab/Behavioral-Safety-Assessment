@@ -1,0 +1,50 @@
+scenario list: ['Cut-In']  # the order of scenarios should be the same as test order
+
+AV:
+  speed: [8.3]  # AV speed when there are no challengers
+  sumo route name: 'AV_route'  # refer to sumo route
+  start lane id: 'EG_1_3_1_1'  # refer to sumo route
+  length: 5
+  width: 2
+
+BV:
+  num: 1
+  scenarios: [['Cut-In']]
+  start lane id: ['EG_1_3_1_0']
+  length: [5]
+  width: [2]
+  init position: [0]
+
+VRU:
+  num: 0
+  scenarios: []
+  start lane id: []
+  length: []
+  width: []
+
+scenario info:
+  Cut-In:
+    AV:
+      start ind: 20
+      end ind: 450
+    challenger:
+      start ind: 20
+      end ind: 512
+    max acceleration: 1.962
+    min acceleration: [-7.06, -4.408673051167331, -1.960924395211599, -0.2664318740528306]
+    reaction time: [1.5, 1.5, 1.5, 1.5]
+    lane change duration: 4.2
+    min initial distance: 1
+    max initial distance: 25
+    min delta speed: 0
+    max delta speed: 2.5
+    speed resolution:
+      low: 0.7
+      mid: 0.5
+      high: 0.5
+    distance resolution:
+      low: 3
+      mid: 0.8
+      high: 0.5
+
+lane width: 3.8

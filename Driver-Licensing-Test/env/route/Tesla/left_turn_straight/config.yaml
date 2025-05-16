@@ -1,0 +1,59 @@
+scenario list: ['Left Turn (AV goes straight)']  # the order of scenarios should be the same as test order
+
+AV:
+  speed: [6.7]  # AV speed when there are no challengers
+  sumo route name: 'AV_route'  # refer to sumo route
+  start lane id: 'EG_18_12_171_0'  # refer to sumo route
+  length: 4.7244
+  width: 1.8542
+
+BV:
+  num: 1
+  scenarios: [['Left Turn (AV goes straight)']]
+  start lane id: ['EG_4_1_20_0']
+  length: [3.8862]
+  width: [1.6002]
+  init position: [0]
+
+VRU:
+  num: 0
+  scenarios: []
+  start lane id: []
+  length: []
+  width: []
+
+scenario info:
+  Left Turn (AV goes straight):
+    AV:
+      start ind: 10
+      conflict ind: 194
+      end ind: 240
+    challenger:
+      start ind: 8
+      init ind: 134
+      conflict ind: 171
+      end ind: 210
+
+    turning offset: 0
+    turning radius: 10.33
+
+    max acceleration: [2.87, 2.7323037241440984, 1.852909388992379, 0.3356996843802441]
+    min acceleration: [-7.06, -4.241907650382408, -2.314763578693004, -0.4168063610293639]
+    acceleration reaction time: [1.5, 1.5, 1.5, 1.5]
+    deceleration reaction time: [1.5, 1.5, 1.5, 1.5]
+    min initial distance: 1
+    max initial distance: 65
+    min AV speed: 3
+    max AV speed: 15
+    min BV speed: 1
+    max BV speed: 10
+    distance resolution:
+      low: 5
+      mid: 3
+      high: 2
+    speed resolution:
+      low: 0.8
+      mid: 0.5
+      high: 0.5
+
+lane width: 3.97

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-05-14 20:59:25 by Eclipse SUMO libsumo Version 1.20.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/libsumoConfiguration.xsd">
+
+    <input>
+        <net-file value="/home/mtl/Documents/av_testing/DLT/env/route/Autoware.Universe/left_turn_straight/map/mcity.net.xml"/>
+        <route-files value="/home/mtl/Documents/av_testing/DLT/env/route/Autoware.Universe/left_turn_straight/map/mcity.route2.xml"/>
+        <additional-files value="/home/mtl/Documents/av_testing/DLT/env/route/Autoware.Universe/left_turn_straight/map/mcity.add.xml"/>
+    </input>
+
+    <output>
+        <fcd-output value="/home/mtl/Documents/av_testing/DLT/output/Autoware.Universe/visualization/test_round_1/left_turn_straight/0/fcd_all.xml"/>
+        <fcd-output.acceleration value="true"/>
+    </output>
+
+    <time>
+        <begin value="0"/>
+        <end value="86400"/>
+        <step-length value="0.1"/>
+    </time>
+
+    <processing>
+        <collision.action value="warn"/>
+        <collision.check-junctions value="true"/>
+        <collision.mingap-factor value="0"/>
+        <scale value="1"/>
+        <time-to-teleport value="300"/>
+        <lanechange.duration value="1"/>
+    </processing>
+
+    <report>
+        <log value="/home/mtl/Documents/av_testing/DLT/output/Autoware.Universe/visualization/test_round_1/left_turn_straight/0/run.log"/>
+    </report>
+
+    <random_number>
+        <random value="true"/>
+    </random_number>
+
+    <gui_only>
+        <quit-on-end value="true"/>
+        <start value="true"/>
+    </gui_only>
+
+</configuration>
