@@ -4,6 +4,8 @@
 [![Ubuntu 22.04](https://img.shields.io/badge/Ubuntu-22.04-orange.svg)](https://releases.ubuntu.com/22.04/)
 [![ROS Humble](https://img.shields.io/badge/ROS-%20Humble-ff69b4.svg)](https://docs.ros.org/en/humble/index.html)
 
+### [Paper](https://arxiv.org/abs/2505.16214) | [Supplementary Materials](https://drive.google.com/file/d/1tPDKx9R1yop7VmyoG4YFLEGDdOJkRFb4/view?usp=sharing)
+
 ## Introduction
 
 This project contains the source code for the paper titled "Behavioral Safety Assessment towards Large-scale Deployment of Autonomous Vehicles". It includes the Driver Licensing Test (DLT) and Driving Intelligence Test (DIT), utilizing the open-source autonomous driving software stack, Autoware Universe.
