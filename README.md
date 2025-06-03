@@ -193,7 +193,7 @@ This issue may occur when running a scenario from the Driver Licensing Test for 
 
 - Tinghan Wang: tinghanw@umich.edu
 
-- Zhijie Qiao zhijieq@umich.edu
+- Zhijie Qiao: zhijieq@umich.edu
 
 - Haojie Zhu: zhuhj@umich.edu
 
