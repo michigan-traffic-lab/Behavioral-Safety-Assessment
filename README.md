@@ -35,7 +35,7 @@ If you encounter any error, check the [Troubleshooting](#troubleshooting) sectio
 ### Requirements
 
 - __Hardware__: CPU with at least 16 cores and a dedicated GPU with at least 8 GB of memory.
-- __System__: Ubuntu 22.04 (For optimal performance and stability, we recommend installing on a dedicated machine rather than a virtual machine or Windows Subsystem for Linux).
+- __System__: Ubuntu 22.04 (For optimal performance and stability, we recommend installing on a **dedicated machine** rather than a virtual machine or Windows Subsystem for Linux).
 - __Python__: 3.10 (native to Ubuntu 22.04).
 
 
